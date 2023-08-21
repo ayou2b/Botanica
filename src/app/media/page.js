@@ -155,7 +155,7 @@ function page() {
             ></Image>
             <div className="flex flex-col gap-2">
               <h4 className="text-[18px] font-semibold">
-                Top 10 facts about wind farms you didn't know
+                Top 10 facts about wind farms you didn t know
               </h4>
               <p className="text-[#525560]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

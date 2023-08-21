@@ -20,7 +20,7 @@ function page() {
               <div className="w-14 h-[2px] bg-[#1D2130] hidden lg:block"></div>
             </span>
             <h1 className="text-[#1D2130] font-semibold text-[30px]">
-              We'd love to hear from you
+              We d love to hear from you
             </h1>
             <p className="leading-7 text-[#525560]">
               Have any question in mind or want to enquire? Please feel free to
@@ -31,7 +31,7 @@ function page() {
           <div className="flex flex-col items-center lg:items-start gap-7 max-w-lg">
             <div className="flex flex-col items-center lg:items-start gap-3">
               <span className="text-[#1D2130] text-[18px] font-bold">
-                Let's talk!
+                Let s talk!
               </span>
               <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
                 <p className="text-[#1D2130]">+1 23 456 789</p>
