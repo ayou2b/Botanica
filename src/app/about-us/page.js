@@ -53,144 +53,153 @@ function Page() {
     <Fragment>
       <Header></Header>
 
-      <section className="mt-16 mb-20 text-center lg:text-start lg:items-start flex flex-col items-center gap-3 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24">
-        <span className="flex items-center font-semibold gap-6 text-[#1D2130] uppercase">
-          Know about us
-          <div className="w-14 h-[2px] hidden lg:block bg-[#1D2130]"></div>
-        </span>
+      <section className="mt-16 mb-20 text-center lg:text-start  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] lg:items-start flex flex-col items-center gap-3">
+          <span className="flex items-center font-semibold gap-6 text-[#1D2130] uppercase">
+            Know about us
+            <div className="w-14 h-[2px] hidden lg:block bg-[#1D2130]"></div>
+          </span>
 
-        <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-start lg:justify-between w-full">
-          <h1 className="text-[35px] font-semibold text-[#1D2130]">
-            We are a nonprofit team
-            <br /> working worldwide
-          </h1>
-          <div className="flex flex-col items-center gap-2 max-w-lg">
-            <h3 className="text-[25px] font-semibold text-[#1D2130]">
-              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-              Nunc ut sem vitae risus tristique posuere.
-            </h3>
-            <p className="text-[#3f4558] leading-7">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Suspendisse varius enim elementum tristique.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#EFF7F2] w-full relative pb-20 pt-48 mt-52 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 text-center flex flex-col items-center lg:text-start">
-        <Image
-          src={image_1}
-          alt=""
-          className="h-80 w-[85%] object-cover absolute top-[-150px] rounded-md"
-        ></Image>
-
-        <div className="flex flex-col mt-14 gap-10 lg:flex-row lg:items-start lg:justify-between mb-16">
-          <div className="max-w-lg flex flex-col gap-3">
-            <span className="font-semibold uppercase text-[#1D2130]">
-              our mission
-            </span>
-            <h2 className="text-[25px] font-semibold text-[#1D2130]">
-              We make the world we save our own environment
-            </h2>
-            <p className="leading-7 text-[#1D2130]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </p>
-          </div>
-
-          <div className="max-w-lg flex flex-col gap-3">
-            <span className="font-semibold uppercase text-[#1D2130]">
-              our Vision
-            </span>
-            <h2 className="text-[25px] font-semibold text-[#1D2130]">
-              Plant more trees to make world air pollution free
-            </h2>
-            <p className="leading-7 text-[#1D2130]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </p>
-          </div>
-        </div>
-
-        <div className=" flex w-full flex-col items-center lg:items-start gap-6">
-          <div className="flex items-center lg:w-full gap-6">
-            <span className="text-[#1D2130] font-semibold whitespace-nowrap uppercase">
-              our Supporters
-            </span>
-          </div>
-
-          <div className="flex flex-col items-center gap-10 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:place-items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between w-full">
-            <Image src={logo_1} width={110} objectFit="cover" alt=""></Image>
-            <Image src={logo_2} width={110} objectFit="cover" alt=""></Image>
-            <Image src={logo_3} width={110} objectFit="cover" alt=""></Image>
-            <Image src={logo_4} width={110} objectFit="cover" alt=""></Image>
-            <Image src={logo_5} width={110} objectFit="cover" alt=""></Image>
-            <Image src={logo_6} width={110} objectFit="cover" alt=""></Image>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-20 text-center flex flex-col items-center gap-10 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 mt-20">
-        <h2 className="text-[30px] font-bold text-[#1D2130]">
-          Awards & Recognitions
-        </h2>
-        <div className="flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 lg:flex lg:flex-row w-full lg:items-start lg:justify-between">
-          <div className="flex items-center flex-col gap-4">
-            <Image src={award_1} alt="" objectFit="cover"></Image>
-            <div className="flex flex-col items-center gap-2">
-              <h3 className="text-[25px] text-[#1D2130] font-bold">2021</h3>
-              <h4 className="text-[18px] font-semibold text-[#1D2130]">
-                Best NGO Award
-              </h4>
-              <p className="text-[#474c5f] uppercase">Berlin, Germany</p>
-            </div>
-          </div>
-
-          <div className="flex items-center flex-col gap-4">
-            <Image src={award_2} alt="" objectFit="cover"></Image>
-            <div className="flex flex-col items-center gap-2">
-              <h3 className="text-[25px] text-[#1D2130] font-bold">2018</h3>
-              <h4 className="text-[18px] font-semibold text-[#1D2130]">
-                Global Award
-              </h4>
-              <p className="text-[#474c5f] uppercase">New York, USA</p>
-            </div>
-          </div>
-
-          <div className="flex items-center flex-col gap-4">
-            <Image src={award_3} alt="" objectFit="cover"></Image>
-            <div className="flex flex-col items-center gap-2">
-              <h3 className="text-[25px] text-[#1D2130] font-bold">2014</h3>
-              <h4 className="text-[18px] font-semibold text-[#1D2130]">
-                Foresto Award
-              </h4>
-              <p className="text-[#474c5f] uppercase">New Delhi, India</p>
-            </div>
-          </div>
-
-          <div className="flex items-center flex-col gap-4">
-            <Image src={award_4} alt="" objectFit="cover"></Image>
-            <div className="flex flex-col items-center gap-2">
-              <h3 className="text-[25px] text-[#1D2130] font-bold">2010</h3>
-              <h4 className="text-[18px] font-semibold text-[#1D2130]">
-                Earth Saver Award
-              </h4>
-              <p className="text-[#474c5f] uppercase">Vienna, Austria</p>
+          <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-start lg:justify-between w-full">
+            <h1 className="text-[35px] font-semibold text-[#1D2130]">
+              We are a nonprofit team
+              <br /> working worldwide
+            </h1>
+            <div className="flex flex-col items-center gap-2 max-w-lg">
+              <h3 className="text-[25px] font-semibold text-[#1D2130]">
+                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                Nunc ut sem vitae risus tristique posuere.
+              </h3>
+              <p className="text-[#3f4558] leading-7">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Suspendisse varius enim
+                elementum tristique.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="text-center lg:text-start px-12 mb-20 sm:px-14 md:px-16 lg:px-20 xl:px-24">
-        <div className="flex lg:pl-28 bg-[#0B0706] px-12 lg:px-0 flex-col py-14 gap-10 rounded-md items-center lg:flex-row-reverse lg:gap-32">
+      <section className="bg-[#EFF7F2] w-full relative pb-20 pt-48 mt-52 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 text-center flex items-center justify-center lg:text-start">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center">
+          <Image
+            src={image_1}
+            alt=""
+            className="h-80 w-[85%] 2xl:max-w-[1300px] object-cover absolute top-[-150px] rounded-md"
+          ></Image>
+
+          <div className="flex w-full flex-col mt-14 gap-10 lg:flex-row lg:items-start lg:justify-between mb-16">
+            <div className="max-w-lg flex flex-col gap-3">
+              <span className="font-semibold uppercase text-[#1D2130]">
+                our mission
+              </span>
+              <h2 className="text-[25px] font-semibold text-[#1D2130]">
+                We make the world we save our own environment
+              </h2>
+              <p className="leading-7 text-[#1D2130]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+
+            <div className="max-w-lg flex flex-col gap-3">
+              <span className="font-semibold uppercase text-[#1D2130]">
+                our Vision
+              </span>
+              <h2 className="text-[25px] font-semibold text-[#1D2130]">
+                Plant more trees to make world air pollution free
+              </h2>
+              <p className="leading-7 text-[#1D2130]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex w-full flex-col items-center lg:items-start gap-6">
+            <div className="flex items-center lg:w-full gap-6">
+              <span className="text-[#1D2130] font-semibold whitespace-nowrap uppercase">
+                our Supporters
+              </span>
+            </div>
+
+            <div className="flex flex-col items-center gap-10 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:place-items-center md:justify-between lg:flex lg:flex-row lg:items-center lg:justify-between w-full">
+              <Image src={logo_1} width={110} objectFit="cover" alt=""></Image>
+              <Image src={logo_2} width={110} objectFit="cover" alt=""></Image>
+              <Image src={logo_3} width={110} objectFit="cover" alt=""></Image>
+              <Image src={logo_4} width={110} objectFit="cover" alt=""></Image>
+              <Image src={logo_5} width={110} objectFit="cover" alt=""></Image>
+              <Image src={logo_6} width={110} objectFit="cover" alt=""></Image>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-20 text-center flex items-center justify-center  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 mt-20">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center gap-10">
+          <h2 className="text-[30px] font-bold text-[#1D2130]">
+            Awards & Recognitions
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 lg:flex lg:flex-row w-full lg:items-start lg:justify-between">
+            <div className="flex items-center flex-col gap-4">
+              <Image src={award_1} alt="" objectFit="cover"></Image>
+              <div className="flex flex-col items-center gap-2">
+                <h3 className="text-[25px] text-[#1D2130] font-bold">2021</h3>
+                <h4 className="text-[18px] font-semibold text-[#1D2130]">
+                  Best NGO Award
+                </h4>
+                <p className="text-[#474c5f] uppercase">Berlin, Germany</p>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-col gap-4">
+              <Image src={award_2} alt="" objectFit="cover"></Image>
+              <div className="flex flex-col items-center gap-2">
+                <h3 className="text-[25px] text-[#1D2130] font-bold">2018</h3>
+                <h4 className="text-[18px] font-semibold text-[#1D2130]">
+                  Global Award
+                </h4>
+                <p className="text-[#474c5f] uppercase">New York, USA</p>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-col gap-4">
+              <Image src={award_3} alt="" objectFit="cover"></Image>
+              <div className="flex flex-col items-center gap-2">
+                <h3 className="text-[25px] text-[#1D2130] font-bold">2014</h3>
+                <h4 className="text-[18px] font-semibold text-[#1D2130]">
+                  Foresto Award
+                </h4>
+                <p className="text-[#474c5f] uppercase">New Delhi, India</p>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-col gap-4">
+              <Image src={award_4} alt="" objectFit="cover"></Image>
+              <div className="flex flex-col items-center gap-2">
+                <h3 className="text-[25px] text-[#1D2130] font-bold">2010</h3>
+                <h4 className="text-[18px] font-semibold text-[#1D2130]">
+                  Earth Saver Award
+                </h4>
+                <p className="text-[#474c5f] uppercase">Vienna, Austria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center lg:text-start flex items-center justify-center px-12 mb-20 sm:px-14 md:px-16 lg:px-20 xl:px-24">
+        <div className="flex lg:pl-28 w-full 2xl:max-w-[1300px] bg-[#0B0706] px-12 lg:px-0 flex-col py-14 gap-10 rounded-md items-center lg:flex-row-reverse lg:gap-32">
           <Image
             src={image_2}
             alt=""
@@ -231,176 +240,178 @@ function Page() {
 
       <section
         id="team"
-        className="flex flex-col items-center mb-20 gap-10 text-center"
+        className=" mb-20  text-center flex items-center justify-center"
       >
-        <div className="flex flex-col gap-3 p-12 max-w-md">
-          <h2 className="text-[25px] font-semibold text-[#1D2130]">
-            Meet our team
-          </h2>
-          <p className="text-[#525560] leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-        </div>
-
-        <div className="flex flex-col lg:justify-between items-center gap-10 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_7}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Leonard John Davies
-              </p>
-              <span className="text-[#525560] ">Cofounder, CEO</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
-              </div>
-            </div>
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center gap-10">
+          <div className="flex flex-col gap-3 p-12 max-w-md">
+            <h2 className="text-[25px] font-semibold text-[#1D2130]">
+              Meet our team
+            </h2>
+            <p className="text-[#525560] leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
           </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_5}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Francis Weber
-              </p>
-              <span className="text-[#525560] ">Vice Chairman</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+          <div className="flex flex-col lg:justify-between items-center gap-10 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_7}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Leonard John Davies
+                </p>
+                <span className="text-[#525560] ">Cofounder, CEO</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_8}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Kyla Obrien
-              </p>
-              <span className="text-[#525560] ">Head of Authority</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_5}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Francis Weber
+                </p>
+                <span className="text-[#525560] ">Vice Chairman</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_4}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Adrian Dixon
-              </p>
-              <span className="text-[#525560] ">Support Executive</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_8}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Kyla Obrien
+                </p>
+                <span className="text-[#525560] ">Head of Authority</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_3}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Freddy Busby
-              </p>
-              <span className="text-[#525560] ">Project Manager</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_4}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Adrian Dixon
+                </p>
+                <span className="text-[#525560] ">Support Executive</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_2}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Dale Banks
-              </p>
-              <span className="text-[#525560] ">Accountatnt, Finance</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_3}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Freddy Busby
+                </p>
+                <span className="text-[#525560] ">Project Manager</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_1}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Dale Banks
-              </p>
-              <span className="text-[#525560] ">Accountatnt, Finance</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_2}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Dale Banks
+                </p>
+                <span className="text-[#525560] ">Accountatnt, Finance</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src={profile_6}
-              alt=""
-              className="h-48 w-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[18px] text-[#1D2130] font-semibold">
-                Miriam Middleton
-              </p>
-              <span className="text-[#525560] ">Cofounder, CEO</span>
-              <div className="text-[#1D2130] flex items-center gap-4">
-                <UilFacebook></UilFacebook>
-                <UilTwitter></UilTwitter>
-                <UilLinkedin></UilLinkedin>
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_1}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Dale Banks
+                </p>
+                <span className="text-[#525560] ">Accountatnt, Finance</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src={profile_6}
+                alt=""
+                className="h-48 w-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-[18px] text-[#1D2130] font-semibold">
+                  Miriam Middleton
+                </p>
+                <span className="text-[#525560] ">Cofounder, CEO</span>
+                <div className="text-[#1D2130] flex items-center gap-4">
+                  <UilFacebook></UilFacebook>
+                  <UilTwitter></UilTwitter>
+                  <UilLinkedin></UilLinkedin>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="text-center transition-all w-full mb-20  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24">
+      <section className="text-center flex items-center justify-center transition-all w-full mb-20  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24">
         <div
-          className="w-full h-80 rounded-md relative text-white flex items-center justify-center"
+          className="w-full 2xl:max-w-[1300px] h-80 rounded-md relative text-white flex items-center justify-center"
           style={{
             backgroundImage: `url(${image_5.src})`,
             backgroundPosition: "center",
@@ -434,147 +445,160 @@ function Page() {
         </div>
       </section>
 
-      <section className="mb-20 text-center px-12 sm:px-14 md:px-16 lg:text-start lg:items-start lg:px-20 xl:px-24 flex flex-col items-center gap-10">
-        <div className="w-full flex flex-col items-center lg:items-start gap-3 max-w-md">
-          <h2 className="text-[25px] font-semibold whitespace-nowrap">
-            Read our Recent News
-          </h2>
-          <p>
-            Edit this text to make it your own. To edit, simply click directly
-            on the text to start We are served
-          </p>
-        </div>
+      <section className="mb-20 text-center px-12 sm:px-14 md:px-16 lg:text-start  lg:px-20 xl:px-24 flex items-center justify-center ">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center lg:items-start gap-10">
+          <div className="w-full flex flex-col items-center lg:items-start gap-3 max-w-md">
+            <h2 className="text-[25px] font-semibold whitespace-nowrap">
+              Read our Recent News
+            </h2>
+            <p>
+              Edit this text to make it your own. To edit, simply click directly
+              on the text to start We are served
+            </p>
+          </div>
 
-        <div className="flex items-center flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-4 lg:items-start">
-          <Link href="/blog-post" className="flex flex-col items-center gap-4">
-            <Image
-              src={image_6}
-              alt=""
-              className="w-full h-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col gap-2">
-              <h4 className="text-[18px] font-semibold">
-                Don’t destroy greenery and don’t spoil scenery
-              </h4>
-              <p className="text-[#525560]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim
-              </p>
-            </div>
-          </Link>
+          <div className="flex items-center flex-col gap-10 md:grid md:grid-cols-2 lg:grid-cols-4 lg:items-start">
+            <Link
+              href="/blog-post"
+              className="flex flex-col items-center gap-4"
+            >
+              <Image
+                src={image_6}
+                alt=""
+                className="w-full h-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col gap-2">
+                <h4 className="text-[18px] font-semibold">
+                  Don’t destroy greenery and don’t spoil scenery
+                </h4>
+                <p className="text-[#525560]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim
+                </p>
+              </div>
+            </Link>
 
-          <Link href="/blog-post" className="flex flex-col items-center gap-4">
-            <Image
-              src={image_7}
-              alt=""
-              className="w-full h-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col gap-2">
-              <h4 className="text-[18px] font-semibold">
-                Is climate change happening faster than expected?
-              </h4>
-              <p className="text-[#525560]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim
-              </p>
-            </div>
-          </Link>
+            <Link
+              href="/blog-post"
+              className="flex flex-col items-center gap-4"
+            >
+              <Image
+                src={image_7}
+                alt=""
+                className="w-full h-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col gap-2">
+                <h4 className="text-[18px] font-semibold">
+                  Is climate change happening faster than expected?
+                </h4>
+                <p className="text-[#525560]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim
+                </p>
+              </div>
+            </Link>
 
-          <Link href="/blog-post" className="flex flex-col items-center gap-4">
-            <Image
-              src={image_8}
-              alt=""
-              className="w-full h-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col gap-2">
-              <h4 className="text-[18px] font-semibold">
-                Top 10 facts about wind farms you didn t know
-              </h4>
-              <p className="text-[#525560]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim
-              </p>
-            </div>
-          </Link>
+            <Link
+              href="/blog-post"
+              className="flex flex-col items-center gap-4"
+            >
+              <Image
+                src={image_8}
+                alt=""
+                className="w-full h-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col gap-2">
+                <h4 className="text-[18px] font-semibold">
+                  Top 10 facts about wind farms you didn t know
+                </h4>
+                <p className="text-[#525560]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim
+                </p>
+              </div>
+            </Link>
 
-          <Link href="#" className="flex flex-col items-center gap-4">
-            <Image
-              src={image_9}
-              alt=""
-              className="w-full h-48 object-cover rounded-md"
-            ></Image>
-            <div className="flex flex-col gap-2">
-              <h4 className="text-[18px] font-semibold">
-                Our goal is to make water available for everyone
-              </h4>
-              <p className="text-[#525560]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim
-              </p>
-            </div>
-          </Link>
+            <Link href="#" className="flex flex-col items-center gap-4">
+              <Image
+                src={image_9}
+                alt=""
+                className="w-full h-48 object-cover rounded-md"
+              ></Image>
+              <div className="flex flex-col gap-2">
+                <h4 className="text-[18px] font-semibold">
+                  Our goal is to make water available for everyone
+                </h4>
+                <p className="text-[#525560]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="text-center lg:text-start mb-20 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 flex flex-col items-center lg:items-start gap-10">
-        <div className="lg:w-full flex items-center gap-6">
-          <h2 className="text-[25px] font-semibold whitespace-nowrap">
-            Our Events
-          </h2>
-          <div className="h-[1.5px] w-full bg-[#E5E5E5] hidden lg:block"></div>
-        </div>
-
-        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:justify-between">
-          <div className="bg-[#BEF3C0] w-full transition-all rounded-md p-5 flex items-center flex-col lg:flex-row lg:justify-between gap-7">
-            <div className="flex flex-col items-center lg:items-start lg:flex-row gap-5">
-              <div className="flex items-center lg:items-start flex-col">
-                <h1 className="text-[35px] font-medium">23</h1>
-                <span className="text-[18px] font-medium uppercase">SEP</span>
-              </div>
-
-              <div className="flex flex-col gap-2 lg:mt-2">
-                <span className="text-[18px] uppercase font-semibold">
-                  Next Events
-                </span>
-                <h3 className="text-[20px] font-bold">
-                  Say no to plastic usage and
-                  <br /> save the planet
-                </h3>
-              </div>
-            </div>
-
-            <Link
-              href="/event-read-more"
-              className="bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center hover:scale-95 duration-200"
-            >
-              <Image src={arrow} alt="" objectFit="cover"></Image>
-            </Link>
+      <section className="text-center lg:text-start mb-20 px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] flex flex-col items-center lg:items-start gap-10">
+          <div className="lg:w-full flex items-center gap-6">
+            <h2 className="text-[25px] font-semibold whitespace-nowrap">
+              Our Events
+            </h2>
+            <div className="h-[1.5px] w-full bg-[#E5E5E5] hidden lg:block"></div>
           </div>
 
-          <div className="bg-[#BEF3C0] transition-all w-full rounded-md p-5 flex items-center flex-col lg:flex-row lg:justify-between gap-7">
-            <div className="flex flex-col items-center lg:items-start lg:flex-row gap-5">
-              <div className="flex items-center lg:items-start flex-col">
-                <h1 className="text-[35px] font-medium">23</h1>
-                <span className="text-[18px] font-medium uppercase">SEP</span>
+          <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:justify-between">
+            <div className="bg-[#BEF3C0] w-full transition-all rounded-md p-5 flex items-center flex-col lg:flex-row lg:justify-between gap-7">
+              <div className="flex flex-col items-center lg:items-start lg:flex-row gap-5">
+                <div className="flex items-center lg:items-start flex-col">
+                  <h1 className="text-[35px] font-medium">23</h1>
+                  <span className="text-[18px] font-medium uppercase">SEP</span>
+                </div>
+
+                <div className="flex flex-col gap-2 lg:mt-2">
+                  <span className="text-[18px] uppercase font-semibold">
+                    Next Events
+                  </span>
+                  <h3 className="text-[20px] font-bold">
+                    Say no to plastic usage and
+                    <br /> save the planet
+                  </h3>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-2 lg:mt-2">
-                <span className="text-[18px] uppercase font-semibold">
-                  Next Events
-                </span>
-                <h3 className="text-[20px] font-bold">
-                  Say no to plastic usage and
-                  <br /> save the planet
-                </h3>
-              </div>
+              <Link
+                href="/event-read-more"
+                className="bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center hover:scale-95 duration-200"
+              >
+                <Image src={arrow} alt="" objectFit="cover"></Image>
+              </Link>
             </div>
 
-            <Link
-              href="/event-read-more"
-              className="bg-white w-[50px] h-[50px] rounded-full flex items-center hover:scale-95 duration-200 justify-center"
-            >
-              <Image src={arrow} alt="" objectFit="cover"></Image>
-            </Link>
+            <div className="bg-[#BEF3C0] transition-all w-full rounded-md p-5 flex items-center flex-col lg:flex-row lg:justify-between gap-7">
+              <div className="flex flex-col items-center lg:items-start lg:flex-row gap-5">
+                <div className="flex items-center lg:items-start flex-col">
+                  <h1 className="text-[35px] font-medium">23</h1>
+                  <span className="text-[18px] font-medium uppercase">SEP</span>
+                </div>
+
+                <div className="flex flex-col gap-2 lg:mt-2">
+                  <span className="text-[18px] uppercase font-semibold">
+                    Next Events
+                  </span>
+                  <h3 className="text-[20px] font-bold">
+                    Say no to plastic usage and
+                    <br /> save the planet
+                  </h3>
+                </div>
+              </div>
+
+              <Link
+                href="/event-read-more"
+                className="bg-white w-[50px] h-[50px] rounded-full flex items-center hover:scale-95 duration-200 justify-center"
+              >
+                <Image src={arrow} alt="" objectFit="cover"></Image>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

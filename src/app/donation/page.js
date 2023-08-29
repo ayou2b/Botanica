@@ -23,183 +23,191 @@ function Page() {
     <Fragment>
       <Header></Header>
 
-      <section className="mb-20 py-20 lg:h-[90vh] w-full px-12 gap-10 flex flex-col items-center lg:flex-row-reverse lg:text-start lg:justify-between sm:px-14 md:px-16 lg:px-20 xl:px-24 bg-[#EFF7F2] text-center">
-        <Image
-          src={hero_image}
-          alt=""
-          className="max-w-[500px] w-full object-cover rounded-md"
-        ></Image>
+      <section className="mb-20 py-20 lg:h-[90vh] w-full px-12  lg:text-start  sm:px-14 md:px-16 lg:px-20 xl:px-24 bg-[#EFF7F2] text-center flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] gap-10 flex flex-col items-center lg:flex-row-reverse lg:justify-between">
+          <Image
+            src={hero_image}
+            alt=""
+            className="max-w-[500px] w-full object-cover rounded-md"
+          ></Image>
 
-        <div className="flex flex-col items-center lg:items-start max-w-lg transition-all gap-6">
-          <span className="uppercase font-semibold text-[#1D2130] flex gap-6 items-center">
-            Donate{" "}
-            <div className="w-14 h-[2px] bg-[#1D2130] hidden lg:block"></div>
-          </span>
-          <h1 className="text-[30px] font-semibold text-[#1D2130]">
-            Making a donation for
-            <br /> Nature.
-          </h1>
-          <p className="leading-7 text-[#525560]">
-            When you donate, you’re supporting effective solutions to big
-            environmental challenges—an investment in the future of our planet.
-          </p>
-          <Link
-            href="#"
-            className="px-8 py-3 bg-[#70C174] text-white shadow-3xl rounded-md hover:scale-95 duration-200"
-          >
-            Donate now
-          </Link>
-        </div>
-      </section>
-
-      <section className="mb-12 px-12  sm:px-14 md:px-16 py-16   lg:px-20 xl:px-24 text-center lg:text-start ">
-        <div className="flex mb-16 flex-col items-center  lg:justify-between lg:flex-row lg:items-start gap-10">
-          <div className="max-w-lg">
-            <h2 className="text-[25px] font-semibold text-[#1D2130]">
-              How you can contribute to protect Earth
-            </h2>
+          <div className="flex flex-col items-center lg:items-start max-w-lg transition-all gap-6">
+            <span className="uppercase font-semibold text-[#1D2130] flex gap-6 items-center">
+              Donate{" "}
+              <div className="w-14 h-[2px] bg-[#1D2130] hidden lg:block"></div>
+            </span>
+            <h1 className="text-[30px] font-semibold text-[#1D2130]">
+              Making a donation for
+              <br /> Nature.
+            </h1>
             <p className="leading-7 text-[#525560]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              When you donate, you’re supporting effective solutions to big
+              environmental challenges—an investment in the future of our
+              planet.
             </p>
-          </div>
-
-          <div className="flex flex-col gap-6 lg:max-w-lg lg:items-start max-w-lg">
-            <div className="flex flex-col lg:flex-row items-center transition-all gap-4 lg:gap-0">
-              <button
-                onClick={() => {
-                  setOverview(true);
-                  setImpact(false);
-                  setWhatYouGet(false);
-                }}
-                className={`${
-                  Overview === true
-                    ? "border-[#70C174] text-[#70C174]"
-                    : "border-[#525560]  text-[#525560]"
-                } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
-              >
-                Overview
-              </button>
-
-              <button
-                onClick={() => {
-                  setOverview(false);
-                  setImpact(true);
-                  setWhatYouGet(false);
-                }}
-                className={`${
-                  Impact === true
-                    ? "border-[#70C174] text-[#70C174]"
-                    : "border-[#525560] text-[#525560]"
-                } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
-              >
-                Impact
-              </button>
-
-              <button
-                onClick={() => {
-                  setOverview(false);
-                  setImpact(false);
-                  setWhatYouGet(true);
-                }}
-                className={`${
-                  WhatYouGet === true
-                    ? "border-[#70C174] text-[#70C174]"
-                    : "border-[#525560]  text-[#525560]"
-                } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
-              >
-                What You get
-              </button>
-            </div>
-
-            <div>
-              {Overview === true && (
-                <div className="flex flex-col gap-4">
-                  <p className="leading-7 text-[#525560]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat.{" "}
-                  </p>
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                </div>
-              )}
-
-              {Impact === true && (
-                <div className="flex flex-col gap-4">
-                  <p className="leading-7 text-[#525560]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat.{" "}
-                  </p>
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                </div>
-              )}
-
-              {WhatYouGet === true && (
-                <div className="flex flex-col gap-4">
-                  <p className="leading-7 text-[#525560]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat.{" "}
-                  </p>
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-
-                  <p className="leading-7 text-[#525560]">
-                    Aenean faucibus nibh et justo cursus id rutrum lorem
-                    imperdiet. Nunc ut sem vitae risus tristique posuere.
-                  </p>
-                </div>
-              )}
-            </div>
+            <Link
+              href="#"
+              className="px-8 py-3 bg-[#70C174] text-white shadow-3xl rounded-md hover:scale-95 duration-200"
+            >
+              Donate now
+            </Link>
           </div>
         </div>
-
-        <div className="w-full h-[2px] bg-[#E5E5E5]"></div>
       </section>
 
-      <section className="flex flex-col items-center text-center lg:text-start gap-8 lg:flex-row lg:items-start lg:justify-between px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 mb-20">
-        <h2 className="text-[25px] font-semibold text-[#1D2130] max-w-sm">
-          How we use your donation
-        </h2>
-        <p className="leading-7 text-[#525560] max-w-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-          Nunc ut sem vitae risus tristique posuere.
-        </p>
-        <p className="leading-7 text-[#525560] max-w-sm">
-          Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
-          ut sem vitae risus tristique posuere. Aenean faucibus nibh et justo
-          cursus id rutrum lorem imperdiet.
-        </p>
+      <section className="mb-12 px-12  sm:px-14 md:px-16 py-16 flex items-center justify-center  lg:px-20 xl:px-24 text-center lg:text-start ">
+        <div className="w-full 2xl:max-w-[1300px]">
+          <div className="flex mb-16 flex-col items-center  lg:justify-between lg:flex-row lg:items-start gap-10">
+            <div className="max-w-lg">
+              <h2 className="text-[25px] font-semibold text-[#1D2130]">
+                How you can contribute to protect Earth
+              </h2>
+              <p className="leading-7 text-[#525560]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis
+                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                tristique posuere.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-6 lg:max-w-lg lg:items-start max-w-lg">
+              <div className="flex flex-col lg:flex-row items-center transition-all gap-4 lg:gap-0">
+                <button
+                  onClick={() => {
+                    setOverview(true);
+                    setImpact(false);
+                    setWhatYouGet(false);
+                  }}
+                  className={`${
+                    Overview === true
+                      ? "border-[#70C174] text-[#70C174]"
+                      : "border-[#525560]  text-[#525560]"
+                  } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
+                >
+                  Overview
+                </button>
+
+                <button
+                  onClick={() => {
+                    setOverview(false);
+                    setImpact(true);
+                    setWhatYouGet(false);
+                  }}
+                  className={`${
+                    Impact === true
+                      ? "border-[#70C174] text-[#70C174]"
+                      : "border-[#525560] text-[#525560]"
+                  } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
+                >
+                  Impact
+                </button>
+
+                <button
+                  onClick={() => {
+                    setOverview(false);
+                    setImpact(false);
+                    setWhatYouGet(true);
+                  }}
+                  className={`${
+                    WhatYouGet === true
+                      ? "border-[#70C174] text-[#70C174]"
+                      : "border-[#525560]  text-[#525560]"
+                  } px-8 pb-3 border-b-[2px] font-semibold whitespace-nowrap hover:border-[#70C174] hover:text-[#70C174] duration-100`}
+                >
+                  What You get
+                </button>
+              </div>
+
+              <div>
+                {Overview === true && (
+                  <div className="flex flex-col gap-4">
+                    <p className="leading-7 text-[#525560]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.{" "}
+                    </p>
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                  </div>
+                )}
+
+                {Impact === true && (
+                  <div className="flex flex-col gap-4">
+                    <p className="leading-7 text-[#525560]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.{" "}
+                    </p>
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                  </div>
+                )}
+
+                {WhatYouGet === true && (
+                  <div className="flex flex-col gap-4">
+                    <p className="leading-7 text-[#525560]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros elementum tristique. Duis
+                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                      ut commodo diam libero vitae erat.{" "}
+                    </p>
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+
+                    <p className="leading-7 text-[#525560]">
+                      Aenean faucibus nibh et justo cursus id rutrum lorem
+                      imperdiet. Nunc ut sem vitae risus tristique posuere.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full h-[2px] bg-[#E5E5E5]"></div>
+        </div>
       </section>
 
-      <section className="text-center transition-all w-full mb-20  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24">
+      <section className=" text-center lg:text-start  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 mb-20 flex items-center justify-center">
+        <div className="w-full 2xl:max-w-[1300px] flex items-center flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
+          <h2 className="text-[25px] font-semibold text-[#1D2130] max-w-sm">
+            How we use your donation
+          </h2>
+          <p className="leading-7 text-[#525560] max-w-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat. Nunc ut sem vitae risus tristique posuere.
+          </p>
+          <p className="leading-7 text-[#525560] max-w-sm">
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+            ut sem vitae risus tristique posuere. Aenean faucibus nibh et justo
+            cursus id rutrum lorem imperdiet.
+          </p>
+        </div>
+      </section>
+
+      <section className="text-center transition-all w-full mb-20  px-12 sm:px-14 md:px-16 lg:px-20 xl:px-24 flex items-center justify-center">
         <div
-          className="w-full h-80 rounded-md relative text-white flex items-center justify-center"
+          className="w-full 2xl:max-w-[1300px] h-80 rounded-md relative text-white flex items-center justify-center"
           style={{
             backgroundImage: `url(${image_5.src})`,
             backgroundPosition: "center",

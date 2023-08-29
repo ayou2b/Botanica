@@ -12,8 +12,8 @@ function page() {
   return (
     <Fragment>
       <Header></Header>
-      <section className="lg:h-[90vh] bg-[#EBF0F9] text-center py-20 lg:text-start px-12 mb-20 flex flex-col justify-center  sm:px-14 md:px-16 lg:px-20 xl:px-24">
-        <div className="flex flex-col items-center lg:flex-row lg:gap-32 w-full lg:items-start">
+      <section className="lg:h-[90vh] bg-[#EBF0F9] text-center py-20 lg:text-start px-12 mb-20 flex justify-center items-center w-full  sm:px-14 md:px-16 lg:px-20 xl:px-24">
+        <div className="flex flex-col 2xl:max-w-[1300px] items-center lg:flex-row lg:justify-between lg:gap-32 w-full lg:items-start">
           <div className="flex flex-col items-center lg:items-start gap-4 max-w-lg">
             <span className="flex  items-center gap-6 uppercase font-semibold text-[#1D2130]">
               Contact us{" "}
